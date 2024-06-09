@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>綺羅の国：攻撃力計算ツール</title>
+  <style>
+    body{
+      padding:20px;
+    }
+    label{
+      display:block;
+    }
+  </style>
+</head>
+<body>
+  <h1>攻撃力計算ツール</h1>
+  <p>
+    <label>硬度(1～10、小数可)：<input type="number" name="hardness" id="hardness" step="0.5"></label>
+    <label>年齢(100～3000)：<input type="number" name="age" id="age"></label>
+    <label><input type="checkbox" name="isfighter" id="isfighter">見回りor冬担当</label>
+    <input type="button" value="計算" onclick="calcAtk()">
+  </p>
+
+  <p>
+    <label>攻撃力：<input type="number" id="atk_result" readonly></label>
+  </p>
+
+  <script>
+    function calcAtk(){
+      let hardness = document.getElementById("hardness").value * 10;
+      let age = 30+prepareAge();
+      const IsFighter = document.getElementById("isfighter").checked ? 50 : 0;
+
+      document.getElementById("atk_result").value = hardness+age+IsFighter;
+    }
+
+    function prepareAge(){
+      let n = document.getElementById("age").value-500;
+      if(n%500===0){
+        return n/500 * 10;
+      }
+      let hDigit = Math.floor(n/1000);
+      if((n%1000)>500){
+        return ((hDigit+1)*1000)/500 * 10;
+      }
+      else if((n%1000)<=500){
+        return (hDigit*1000 + 500)/500 * 10;
+      }
+      else{
+        return n/500 * 10;
+      }
+    }
+  </script>
+</body>
+</html>
