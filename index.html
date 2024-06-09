@@ -16,8 +16,8 @@
 <body>
   <h1>攻撃力計算ツール</h1>
   <p>
-    <label>硬度(1～10、小数可)：<input type="number" name="hardness" id="hardness" step="0.5"></label>
-    <label>年齢(100～3000)：<input type="number" name="age" id="age"></label>
+    <label>硬度(1～10、小数可)：<input type="number" name="hardness" id="hardness" step="0.5" min="1.0" max="10.0"></label>
+    <label>年齢(100～3000)：<input type="number" name="age" id="age" min="100" max="3000"></label>
     <label><input type="checkbox" name="isfighter" id="isfighter">見回りor冬担当</label>
     <input type="button" value="計算" onclick="calcAtk()">
   </p>
