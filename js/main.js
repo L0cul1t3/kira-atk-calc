@@ -5,7 +5,7 @@ var atkSum = null;
 
 function calcAtk() {
   let hardness = (document.getElementById("hardness").value!==null)?document.getElementById("hardness").value * 10:0;
-  let age = (document.getElementById("age").value)?30 + prepareAge(document.getElementById("age").value):0;
+  let age = 30 + prepareAge(document.getElementById("age").value);
   const IsFighter = document.getElementById("isfighter").checked ? 50 : 0;
 
   atkMain = hardness + age + IsFighter;
@@ -33,8 +33,9 @@ function calcAtkWeapon2() {
 function calcAtkMoon() {
   let hardness = document.getElementById("hardness").value * 10;
   let age = 30 + prepareAge(document.getElementById("age").value);
+  const IsFighter = document.getElementById("isfighter").checked ? 50 : 0;
 
-  atkMain = hardness + age + 100;
+  atkMain = hardness + age + IsFighter + 100;
   document.getElementById("main_atk_result").value = atkMain;
 }
 
@@ -53,18 +54,8 @@ function calcTotalAtkMoon() {
 }
 
 function prepareAge(age) {
-  let n = age - 500;
-  if (n % 500 === 0) {
-    return (n / 500) * 10;
-  }
-  let hDigit = Math.floor(n / 1000);
-  if (n % 1000 > 500) {
-    return (((hDigit + 1) * 1000) / 500) * 10;
-  } else if (n % 1000 <= 500) {
-    return ((hDigit * 1000 + 500) / 500) * 10;
-  } else {
-    return (n / 500) * 10;
-  }
+  let n = Math.ceil((age - 500) / 500);
+  return n * 10;
 }
 
 function weaponExist() {
