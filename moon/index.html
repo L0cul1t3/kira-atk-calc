@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="./js/main.js"></script>
-  <title>綺羅の国 | 攻撃力計算</title>
+  <script src="../js/main.js"></script>
+  <title>綺羅の国 | 攻撃力計算(月用)</title>
   <style>
+    body{
+      background-color: #000;
+      color: #fff;
+    }
     #wrapper{
       max-width:700px;
       padding:20px;
@@ -31,8 +35,9 @@
       display:inline-block;
     }
     input{
-      background-color: #fff;
-      border: solid 1px #000;
+      background-color: #000;
+      color: #fff;
+      border: solid 1px #fff;
       border-radius:3px;
     }
     input[type="number"]{
@@ -49,13 +54,14 @@
       width:16px;
       height:16px;
       margin:0 35px;
+      background-color: #000;
     }
     input:focus{
-      outline: solid 1px #000;
-      background-color:#ccddf0;
+      outline: solid 1px #fff;
+      background-color:#39558a;
     }
     div.flx{
-      outline: solid 2px #ccddf0;
+      outline: solid 2px #39558a;
       margin: 10px auto;
       padding: 0 10px;
       display: flex;
@@ -64,7 +70,7 @@
       justify-content: space-around;
     }
     div.flx:focus-within{
-      background-color: #ccddf040;
+      background-color: #39558a40;
     }
     div.flx h2{
       width:100%;
@@ -117,17 +123,17 @@
 </head>
 <body>
   <div id="wrapper">
-    <h1>攻撃力計算ツール</h1>
+    <h1>攻撃力計算ツール(月用)</h1>
     <div class="flx" id="mainatk">
       <h2>本体</h2>
       <div>
         <p>
           <label for="hardness">硬度(1～10、小数可)：</label><input type="number" name="hardness" id="hardness" step="0.5" min="1" max="10" required><br>
-          <label for="age">年齢(100～3000)：</label><input type="number" name="age" id="age" min="100" max="3000" required><br>
+          <label for="age">年齢(3000～10000)：</label><input type="number" name="age" id="age" min="3000" max="10000" required><br>
           <label for="isfighter">見回りor冬担当：</label><input type="checkbox" name="isfighter" id="isfighter">
         </p>
-        <p class="cl">
-          <input type="button" value="計算" onclick="calcAtk()">
+        <p>
+          <input type="button" value="計算" onclick="calcAtkMoon()">
         </p>
         <p>
           <label>攻撃力：<input type="number" id="main_atk_result" readonly></label>
@@ -177,7 +183,7 @@
       <div>
         <input type="button" value="計算：合計" id="calc_total" onclick="calcTotalAtk()">
         <p>
-          <label for="atk_sum">攻撃力の合計：</label><input type="number" id="atk_sum" readonly>
+          <label>攻撃力の合計：<input type="number" id="atk_sum" readonly></label>
         </p>
       </div>
     </div>
