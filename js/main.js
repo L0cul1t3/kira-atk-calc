@@ -39,10 +39,6 @@ function calcAtkMoon() {
 }
 
 function calcTotalAtk() {
-  calcAtk();
-  calcAtkWeapon1();
-  calcAtkWeapon2();
-
   atkSum = atkMain + atkWeapon1 + atkWeapon2;
   document.getElementById("atk_sum").value = atkSum;
 }
