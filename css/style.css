@@ -118,9 +118,9 @@
             width:100%;
             padding:20px 10px;
       }
-      div.flx, div.flx div{
+      div.flx {
             box-sizing:border-box;
-            width:100%;
+            width:calc(100% - 20px);
       }
       #weapon, #weapon_set{
             flex-direction: column;
