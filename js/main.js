@@ -56,24 +56,30 @@ function weaponExist() {
     atkWeapon1 = 0;
     atkWeapon2 = 0;
     document.getElementById("weapon01").style.visibility = "collapse";
+    document.getElementById("weapon01").style.width = "0";
     document.getElementById("weapon01").style.height = "0";
     document.getElementById("weapon02").style.visibility = "collapse";
+    document.getElementById("weapon02").style.width = "0";
     document.getElementById("weapon02").style.height = "0";
   }
   else if (Radios["1"].checked) {
     atkWeapon1 = null;
     atkWeapon2 = 0;
     document.getElementById("weapon01").style.visibility = "visible";
+    document.getElementById("weapon01").style.width = "auto";
     document.getElementById("weapon01").style.height = "auto";
     document.getElementById("weapon02").style.visibility = "collapse";
+    document.getElementById("weapon02").style.width = "0";
     document.getElementById("weapon02").style.height = "0";
   }
   else if (Radios["2"].checked) {
     atkWeapon1 = null;
     atkWeapon2 = null;
     document.getElementById("weapon01").style.visibility = "visible";
+    document.getElementById("weapon01").style.width = "auto";
     document.getElementById("weapon01").style.height = "auto";
     document.getElementById("weapon02").style.visibility = "visible";
+    document.getElementById("weapon02").style.width = "auto";
     document.getElementById("weapon02").style.height = "auto";
   }
 }
