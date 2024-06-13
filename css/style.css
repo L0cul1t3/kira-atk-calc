@@ -115,13 +115,13 @@
             padding:0;
       }
       #wrapper {
-            width:100%;
+            width: calc(100% - 20px);
             padding:20px 10px;
             margin: 0;
       }
       div.flx {
             margin: 10px 0;
-            width: calc(100% - 20px);
+            width: 100%;
             justify-content: center;
       }
       #weapon, #weapon_set{
