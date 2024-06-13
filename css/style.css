@@ -116,4 +116,7 @@
       #weapon_set{
             flex-direction: column;
       }
+      #weapon_set h2, #radioWeapon{
+            width: 100%;
+      }
 }
