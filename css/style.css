@@ -120,13 +120,12 @@
             margin: 0;
       }
       div.flx {
+            margin: 10px 0;
             width: calc(100% - 20px);
+            justify-content: center;
       }
       #weapon, #weapon_set{
             flex-direction: column;
-      }
-      #weapon{
-            padding: 0 10px;
       }
       #weapon_set h2, #radioWeapon{
             width: 100%;
