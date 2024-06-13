@@ -45,7 +45,7 @@ function calcTotalAtk() {
 }
 
 function prepareAge(age) {
-  if(age<500) return 0;
+  if(age<501) return 0;
   let n = Math.ceil((age - 500) / 500);
   return n * 10;
 }
