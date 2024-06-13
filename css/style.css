@@ -116,6 +116,9 @@
       #weapon, #weapon_set{
             flex-direction: column;
       }
+      #weapon{
+            padding: 0 10px;
+      }
       #weapon_set h2, #radioWeapon{
             width: 100%;
       }
