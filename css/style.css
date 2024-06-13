@@ -109,11 +109,17 @@
 }
 
 @media screen and (max-width: 480px) {
+      body{
+            width:100vw;
+            margin:0;
+            padding:0;
+      }
       #wrapper {
             width:100%;
             padding:20px 0;
       }
       div.flx, div.flx div{
+            box-sizing:border-box;
             width:100%;
       }
       #weapon, #weapon_set{
