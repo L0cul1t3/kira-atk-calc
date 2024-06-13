@@ -113,6 +113,9 @@
             width:100%;
             padding:20px 0;
       }
+      div.flx, div.flx div{
+            width:100%;
+      }
       #weapon, #weapon_set{
             flex-direction: column;
       }
