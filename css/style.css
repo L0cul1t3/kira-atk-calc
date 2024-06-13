@@ -4,51 +4,51 @@
       max-width:700px;
       padding:20px;
       margin:0 auto;
-    }
-    h1{
+      }
+      h1{
       text-align: center;
       margin-top: 0;
-    }
-    p{
+      }
+      p{
       text-align: end;
-    }
-    p.ll{
+      }
+      p.ll{
       text-align: start;
-    }
-    p.cl{
+      }
+      p.cl{
       text-align: center;
-    }
-    h2{
+      }
+      h2{
       margin-bottom: 0;
-    }
-    label{
+      }
+      label{
       display:inline-block;
-    }
-    input{
+      }
+      input{
       background-color: #fff;
       border: solid 1px #000;
       border-radius:3px;
-    }
-    input[type="number"]{
+      }
+      input[type="number"]{
       width:80px;
-    }
-    input[type="button"]{
+      }
+      input[type="button"]{
       font-size: 1.25em;
       letter-spacing: 0.5em;
       width:100%;
       height: 2em;
-    }
-    input[type="checkbox"]{
+      }
+      input[type="checkbox"]{
       vertical-align: -2px;
       width:16px;
       height:16px;
       margin:0 35px;
-    }
-    input:focus{
+      }
+      input:focus{
       outline: solid 1px #000;
       background-color:#ccddf0;
-    }
-    div.flx{
+      }
+      div.flx{
       outline: solid 2px #ccddf0;
       margin: 10px auto;
       padding: 0 10px;
@@ -56,54 +56,61 @@
       flex-wrap: wrap;
       gap: 0 20px;
       justify-content: space-around;
-    }
-    div.flx:focus-within{
+      }
+      div.flx:focus-within{
       background-color: #ccddf040;
-    }
-    div.flx h2{
+      }
+      div.flx h2{
       width:100%;
       text-align: center;
       margin:10px 10px 0;
-    }
-    div.flx > div{
+      }
+      div.flx > div{
       flex-basis:1;
       padding:0 10px 10px;
-    }
-    #weapon h3{
+      }
+      #weapon h3{
       margin:0;
       width:100%;
       text-align:center;
-    }
-    #calc_total{
+      }
+      #calc_total{
       margin-top: 10px;
-    }
-    #total>div, #mainatk>div{
+      }
+      #total>div, #mainatk>div{
       width:100%;
-    }
-    #total>div p{
+      }
+      #total>div p{
       font-size: 1.5em;
       text-align: center;
-    }
-    #total input[type="number"]{
+      }
+      #total input[type="number"]{
       width: 200px;
       font-size: calc(100% * 1.25);
       text-align: center;
-    }
-    #weapon_set{
+      }
+      #weapon_set{
       display: flex;
       width:100%;
-    }
-    #weapon_set h2{
+      }
+      #weapon_set h2{
       width:45%;
-    }
-    #radioWeapon{
+      }
+      #radioWeapon{
       width:45%;
       text-align:center;
       padding: 10px 0 0;
-    }
-    #radioWeapon input[type="button"]{
+      }
+      #radioWeapon input[type="button"]{
       width:30%;
       letter-spacing: 0;
       font-size:1em;
       margin-left: 10px;
-    }
+}
+
+@media screen and (max-width: 480px) {
+      #wrapper {
+            width:100%;
+            padding:20px 0;
+      }
+}
