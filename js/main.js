@@ -44,16 +44,8 @@ function calcTotalAtk() {
   document.getElementById("atk_sum").value = atkSum;
 }
 
-function calcTotalAtkMoon() {
-  calcAtkMoon();
-  calcAtkWeapon1();
-  calcAtkWeapon2();
-
-  atkSum = atkMain + atkWeapon1 + atkWeapon2;
-  document.getElementById("atk_sum").value = atkSum;
-}
-
 function prepareAge(age) {
+  if(age<500) return 0;
   let n = Math.ceil((age - 500) / 500);
   return n * 10;
 }
