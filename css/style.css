@@ -121,7 +121,7 @@
       }
       div.flx {
             margin: 10px 0;
-            width: 100%;
+            width: calc(100% - 20px);
             justify-content: center;
       }
       #weapon, #weapon_set{
