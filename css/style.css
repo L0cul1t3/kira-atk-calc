@@ -117,10 +117,10 @@
       #wrapper {
             width:100%;
             padding:20px 10px;
+            margin: 0;
       }
       div.flx {
-            box-sizing:border-box;
-            width:calc(100% - 20px);
+            width: calc(100% - 20px);
       }
       #weapon, #weapon_set{
             flex-direction: column;
