@@ -130,4 +130,7 @@
       #weapon_set h2, #radioWeapon{
             width: 100%;
       }
+      #weapon01, #weapon02{
+            width: calc(100% - 20px);
+      }
 }
