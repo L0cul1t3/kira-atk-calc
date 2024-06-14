@@ -101,6 +101,9 @@
       text-align:center;
       padding: 10px 0 0;
       }
+      #radioWeapon input[type="radio"]:focus{
+            outline:none;
+      }
       #radioWeapon input[type="button"]{
       width:30%;
       letter-spacing: 0;
