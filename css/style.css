@@ -44,7 +44,7 @@
       height:16px;
       margin:0 35px;
       }
-      input:focus{
+      input[type="number"]:focus, input[type="button"]:focus{
       outline: solid 1px #000;
       background-color:#ccddf0;
       }
@@ -100,9 +100,6 @@
       width:45%;
       text-align:center;
       padding: 10px 0 0;
-      }
-      #radioWeapon input[type="radio"]:focus{
-            outline:none;
       }
       #radioWeapon input[type="button"]{
       width:30%;
