@@ -44,6 +44,9 @@
       height:16px;
       margin:0 35px;
       }
+      input[type="checkbox"]:focus{
+            outline: none;
+      }
       input[type="number"]:focus, input[type="button"]:focus{
       outline: solid 1px #000;
       background-color:#ccddf0;
